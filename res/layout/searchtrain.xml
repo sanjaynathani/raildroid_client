@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<View android:layout_width="1dp" android:layout_height="20dp">
+	</View>
+
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/welcome"
+		android:layout_gravity="center" android:textColor="@android:color/secondary_text_dark_nodisable"
+		android:textStyle="bold" android:textAppearance="@android:style/TextAppearance.Medium" />
+
+	<View android:layout_width="1dp" android:layout_height="10dp">
+	</View>
+
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center"
+		android:src="@drawable/animatedtrain" />
+
+	<View android:layout_width="1dp" android:layout_height="40dp">
+	</View>
+
+
+	<AutoCompleteTextView android:layout_width="250dp"
+		android:id="@+id/fromAutoComplete" android:layout_height="wrap_content"
+		android:hint="From station" android:layout_gravity="center"></AutoCompleteTextView>
+	<View android:layout_width="1dp" android:layout_height="20dip">
+		<requestFocus></requestFocus>
+	</View>
+
+	<AutoCompleteTextView android:layout_width="250dp"
+		android:id="@+id/toAutoComplete" android:layout_height="wrap_content"
+		android:hint="To station" android:layout_gravity="center">
+
+	</AutoCompleteTextView>
+	<View android:layout_width="1dp" android:layout_height="20dip">
+	</View>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_horizontal">
+
+		<Button android:layout_width="wrap_content" android:text="Reset"
+			android:layout_height="35dp" android:id="@+id/resetBtn"
+			android:layout_gravity="center"></Button>
+
+		<Button android:layout_width="wrap_content" android:text="Swap"
+			android:layout_height="35dp" android:id="@+id/swapBtn"
+			android:layout_gravity="center" android:layout_toRightOf="@+id/resetBtn"></Button>
+
+		<Button android:layout_width="wrap_content" android:text="Find Train"
+			android:layout_height="35dp" android:id="@+id/searchTrainBtn"
+			android:layout_gravity="center" android:layout_toRightOf="@+id/swapBtn"></Button>
+
+	</RelativeLayout>
+
+	<View android:layout_width="1dp" android:layout_height="20dip">
+	</View>
+
+	<TextView android:textColor="@android:color/secondary_text_dark_nodisable"
+		android:layout_height="wrap_content" android:textAppearance="@android:style/TextAppearance.Small.Inverse"
+		android:text="@string/searchTrainMsg" android:layout_width="wrap_content"
+		android:layout_gravity="center" android:textStyle="italic"></TextView>
+
+
+</LinearLayout>

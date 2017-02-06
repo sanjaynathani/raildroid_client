@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">Welcome To RailDroid</string>
+    <string name="app_name">RailDroid</string>
+    
+    <string name="searchTrainMsg">Select source and destination to find your train</string>
+    
+    <string-array name="quota">
+    	<item>General</item>
+    	<item>Tatkal</item>
+    	<item>Ladies</item>
+    	<!-- <item>Foreign</item>
+    	<item>Defence</item>
+    	<item>Lower Berth</item>
+    	<item>Yuva</item>
+    	<item>Handicaped</item>
+    	<item>Head quarters</item>
+    	<item>Duty Pass</item>
+    	<item>Parliament</item> -->
+    </string-array>
+    
+    <string name="serviceMenuTitle">Select Option</string>
+    <string-array name="serviceMenuItems">
+    	<item>Train route</item>
+    	<item>Berth availibility</item>
+    </string-array>
+</resources>
